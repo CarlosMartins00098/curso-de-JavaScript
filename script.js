@@ -1,7 +1,13 @@
-//valariveis
-// var let const
-let idade = 20;
-console.log(idade);
+ let a = 0;
 
-const gravidade = 9.8;
-console.log(gravidade);
+ a = 2;
+
+ if (a == 0) {
+  console.log("passou");
+ } else {
+   console.log("não passou");
+ }
+
+ // condição ? comando1 : comando2;
+
+a == 3 ? console.log("sim") : console.log("não");

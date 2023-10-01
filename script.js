@@ -1,13 +1,12 @@
- let a = 0;
+// let frutas = ["maça","limão","abacaxi","tomate"];
+// console.table(frutas);
+// console.table(frutas[0]);
+// frutas[1] = "uva";
+// console.table(frutas);
 
- a = 2;
-
- if (a == 0) {
-  console.log("passou");
- } else {
-   console.log("não passou");
- }
-
- // condição ? comando1 : comando2;
-
-a == 3 ? console.log("sim") : console.log("não");
+// Matriz
+let notas = [[2, 4, 7, 9],[3, 6, 9, 2]];
+// console.table(notas);
+// console.table(notas[1][1]);
+notas[0][3] = 5;
+console.table(notas);

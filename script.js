@@ -1,12 +1,23 @@
-// let frutas = ["maça","limão","abacaxi","tomate"];
-// console.table(frutas);
-// console.table(frutas[0]);
-// frutas[1] = "uva";
-// console.table(frutas);
+class Jogador{
+  Score = 0;
+  pause(){
+    console.log("Jogo Pausado");
+  }
+  exit(){
+    console.log("Jogo Terminado");
+  }
 
-// Matriz
-let notas = [[2, 4, 7, 9],[3, 6, 9, 2]];
-// console.table(notas);
-// console.table(notas[1][1]);
-notas[0][3] = 5;
-console.table(notas);
+}
+
+const jogador1 = new Jogador();
+const jogador2 = new Jogador();
+
+jogador1.Score += 1;
+
+console.log(jogador1.Score);
+console.log(jogador2.Score);
+
+jogador1.pause();
+jogador2.exit();
+
+

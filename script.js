@@ -1,23 +1,24 @@
-class Jogador{
-  Score = 0;
-  pause(){
-    console.log("Jogo Pausado");
+class Estudante{
+  constructor(nome,idade,materia){
+    this.nome = nome;
+    this.idade = idade;
+    this.materia = materia;
   }
-  exit(){
-    console.log("Jogo Terminado");
+  aprendendo(){
+    console.log("Eu sou " + this.nome + ", estou estudando "+ this.materia);
   }
-
 }
 
-const jogador1 = new Jogador();
-const jogador2 = new Jogador();
+const estudante1 = new Estudante();
+const estudante2 = new Estudante();
 
-jogador1.Score += 1;
+estudante1.nome = "Carlos";
+estudante1.idade = 20;
+estudante1.materia = "matemática";
 
-console.log(jogador1.Score);
-console.log(jogador2.Score);
+estudante2.idade = 25;
+estudante2.nome = "Marcos";
 
-jogador1.pause();
-jogador2.exit();
-
-
+console.table(estudante2);
+// console.log(estudante1.nome);
+// estudante1.aprendendo();

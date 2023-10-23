@@ -1,24 +1,49 @@
 class Estudante{
+  #nome
+  #idade
+  #materia
+
   constructor(nome,idade,materia){
-    this.nome = nome;
-    this.idade = idade;
-    this.materia = materia;
+    this.#nome = nome;
+    this.#idade = idade;
+    this.#materia = materia;
   }
+
+  get nome(){
+    return this.#nome;
+  }
+
+  set nome(nome){
+    this.#nome = nome;
+  }
+
+  get idade(){
+    return this.#idade;
+  }
+
+  set idade(idade){
+    this.#idade = idade;
+  }
+
+  get materia(){
+    return this.#materia;
+  }
+
+  set materia(materia){
+    this.#materia = materia;
+  }
+
   aprendendo(){
     console.log("Eu sou " + this.nome + ", estou estudando "+ this.materia);
   }
 }
 
-const estudante1 = new Estudante();
-const estudante2 = new Estudante();
+const estudante1 = new Estudante("Carlos", 20, "matemática");
 
-estudante1.nome = "Carlos";
-estudante1.idade = 20;
-estudante1.materia = "matemática";
+estudante1.nome = "pedro";
+estudante1.idade = 22;
+estudante1.materia = "geôgrafia"
 
-estudante2.idade = 25;
-estudante2.nome = "Marcos";
-
-console.table(estudante2);
-// console.log(estudante1.nome);
-// estudante1.aprendendo();
+console.table(estudante1.nome);
+console.table(estudante1.idade);
+console.table(estudante1.materia);
